@@ -1,6 +1,5 @@
 '''
-Created on 11-Oct-2018
-
+Created on 7-Oct-2018
 @author: Pramey
 '''
 import numpy as np 
@@ -117,8 +116,10 @@ def filter(r, g, b, kernel, type, init_val):
     print("SSIM:", np.mean(ssim_i(original_img, cropped_deblurred_img)))
     print("PSNR:" , psnr(original_img, cropped_deblurred_img))
     return cropped_deblurred_img
-    
+#upto here the code has been written by me   
   
+#the following code was derived from 
+#http://www.math.buffalo.edu/~badzioch/MTH337/PT/PT-matplotlib_slider/PT-matplotlib_slider.html
 def interactive_value():
     
     D_min = 100
